@@ -13,6 +13,7 @@
 		1D0986572418284100D2AB52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D0986562418284100D2AB52 /* Assets.xcassets */; };
 		1D09865A2418284100D2AB52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D0986592418284100D2AB52 /* Preview Assets.xcassets */; };
 		1D09865D2418284100D2AB52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D09865B2418284100D2AB52 /* LaunchScreen.storyboard */; };
+		1D0986662418CBDD00D2AB52 /* Consequences.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D0986652418C93100D2AB52 /* Consequences.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1D0986592418284100D2AB52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D09865C2418284100D2AB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D09865E2418284100D2AB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D0986652418C93100D2AB52 /* Consequences.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Consequences.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		1D09864F2418283D00D2AB52 /* SlotMachine */ = {
 			isa = PBXGroup;
 			children = (
+				1D0986642418C90B00D2AB52 /* fonts */,
 				1D0986502418283D00D2AB52 /* AppDelegate.swift */,
 				1D0986522418283D00D2AB52 /* SceneDelegate.swift */,
 				1D0986542418283D00D2AB52 /* ContentView.swift */,
@@ -73,6 +76,14 @@
 				1D0986592418284100D2AB52 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1D0986642418C90B00D2AB52 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1D0986652418C93100D2AB52 /* Consequences.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0986662418CBDD00D2AB52 /* Consequences.ttf in Resources */,
 				1D09865D2418284100D2AB52 /* LaunchScreen.storyboard in Resources */,
 				1D09865A2418284100D2AB52 /* Preview Assets.xcassets in Resources */,
 				1D0986572418284100D2AB52 /* Assets.xcassets in Resources */,

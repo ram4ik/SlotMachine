@@ -35,17 +35,21 @@ struct ContentView: View {
                     }
                     VStack {
                         Text("SLOT")
-                            .font(.system(size: 60))
+                            .font(.custom("Consequences", size: 60))
+                            .font(.largeTitle)
                             .bold()
                             .foregroundColor(Color("DarkYellow"))
-                            .shadow(radius: 10)
+                            .shadow(color: Color("LightYellow"), radius: 30)
                         
                         Text("MACHINE")
-                            .font(.system(size: 20))
+                            .font(.custom("Consequences", size: 20))
                             .bold()
                             .foregroundColor(Color("DarkYellow"))
-                            .shadow(radius: 10)
-                    }
+                            .shadow(color: Color("LightYellow"), radius: 30)
+                    }.padding(.horizontal, 50)
+                    .background(Color.black.opacity(0.3))
+                    .clipShape(Capsule())
+                    .shadow(color: Color("DarkYellow"), radius: 30)
                     
                     
                 }.padding(.horizontal)
@@ -93,7 +97,7 @@ struct ContentView: View {
                                     .rotationEffect(.degrees(90.0))
                                     .foregroundColor(Color("DarkBlue"))
                                     .offset(y: 40)
-                                    .shadow(radius: 10)
+                                    .shadow(color: Color("LightYellow"), radius: 10)
                                 
                                 Image(systemName: "hexagon")
                                     .resizable()
@@ -101,7 +105,7 @@ struct ContentView: View {
                                     .rotationEffect(.degrees(90.0))
                                     .foregroundColor(Color("DarkYellow"))
                                     .offset(y: 40)
-                                    .shadow(radius: 10)
+                                    .shadow(color: Color("LightYellow"), radius: 10)
                             }
                         }
                         HStack {
@@ -112,14 +116,14 @@ struct ContentView: View {
                                     .frame(width: 160, height: 180)
                                     .rotationEffect(.degrees(90.0))
                                     .foregroundColor(Color("DarkBlue"))
-                                    .shadow(radius: 10)
+                                    .shadow(color: Color("LightYellow"), radius: 10)
                                 
                                 Image(systemName: "hexagon")
                                     .resizable()
                                     .frame(width: 160, height: 180)
                                     .rotationEffect(.degrees(90.0))
                                     .foregroundColor(Color("DarkYellow"))
-                                    .shadow(radius: 10)
+                                    .shadow(color: Color("LightYellow"), radius: 10)
                             }
                             
                             Spacer()
@@ -130,14 +134,14 @@ struct ContentView: View {
                                     .frame(width: 160, height: 180)
                                     .rotationEffect(.degrees(90.0))
                                     .foregroundColor(Color("DarkBlue"))
-                                    .shadow(radius: 10)
+                                    .shadow(color: Color("LightYellow"), radius: 10)
                                 
                                 Image(systemName: "hexagon")
                                     .resizable()
                                     .frame(width: 160, height: 180)
                                     .rotationEffect(.degrees(90.0))
                                     .foregroundColor(Color("DarkYellow"))
-                                    .shadow(radius: 10)
+                                    .shadow(color: Color("LightYellow"), radius: 10)
                             }
                             Spacer()
                         }.padding()
@@ -151,18 +155,20 @@ struct ContentView: View {
                                         .frame(width: 160, height: 180)
                                         .rotationEffect(.degrees(90.0))
                                         .foregroundColor(Color("DarkBlue"))
+                                        .shadow(color: Color("LightYellow"), radius: 10)
                                     Image(systemName: "hexagon")
                                         .resizable()
                                         .frame(width: 160, height: 180)
                                         .rotationEffect(.degrees(90.0))
                                         .foregroundColor(Color("DarkYellow"))
+                                        .shadow(color: Color("LightYellow"), radius: 10)
                                     Text("SPIN")
-                                        .font(.system(size: 60))
+                                        .font(.custom("Consequences", size: 50))
                                         .bold()
                                         .foregroundColor(Color("DarkYellow"))
                                 }
                             }.offset(y: -40)
-                            .shadow(radius: 10)
+                            
                         }
                         Spacer()
                         Group {
