@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var spin = false
+    
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [Color("LightPink"), Color("DarkPink")]), startPoint: .top, endPoint: .bottom)
@@ -106,6 +108,12 @@ struct ContentView: View {
                                     .foregroundColor(Color("DarkYellow"))
                                     .offset(y: 40)
                                     .shadow(color: Color("LightYellow"), radius: 10)
+                                
+                                Text("🍒")
+                                    .font(.system(size: 140))
+                                    .offset(y: self.spin ? 40 : 0)
+                                    .opacity(self.spin ? 1 : 0)
+                                    .animation(.default)
                             }
                         }
                         HStack {
@@ -124,6 +132,12 @@ struct ContentView: View {
                                     .rotationEffect(.degrees(90.0))
                                     .foregroundColor(Color("DarkYellow"))
                                     .shadow(color: Color("LightYellow"), radius: 10)
+                                
+                                Text("🍌")
+                                    .font(.system(size: 140))
+                                    .offset(y: self.spin ? 0 : -40)
+                                    .opacity(self.spin ? 1 : 0)
+                                    .animation(.default)
                             }
                             
                             Spacer()
@@ -142,12 +156,18 @@ struct ContentView: View {
                                     .rotationEffect(.degrees(90.0))
                                     .foregroundColor(Color("DarkYellow"))
                                     .shadow(color: Color("LightYellow"), radius: 10)
+                                
+                                Text("🍋")
+                                    .font(.system(size: 140))
+                                    .offset(y: self.spin ? 0 : -40)
+                                    .opacity(self.spin ? 1 : 0)
+                                    .animation(.default)
                             }
                             Spacer()
                         }.padding()
                         HStack {
                             Button(action: {
-                                
+                                self.spin.toggle()
                             }) {
                                 ZStack {
                                     Image(systemName: "hexagon.fill")
